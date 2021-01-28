@@ -1,0 +1,7 @@
+{
+  "name": "nocto-plugin-richard-stallman",
+  "version": "1.0.0",
+  "main": "richard-stallman.js",
+  "author": "Robin Jacobs",
+  "license": "GPL-3.0"
+}
