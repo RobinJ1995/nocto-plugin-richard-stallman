@@ -20,7 +20,12 @@ module.exports = loadPlugin = (resources, service) => {
                 return;
             }
 
-            if ((message.text.match(TRIGGER) || []).length >
+            if (message.text.toLowerCase() === '/start') {
+                api.sendMessage({
+                    chat_id: message.chat.id,
+                    text: `Ask me about Linux, why don't you?`
+                });
+            } else if ((message.text.match(TRIGGER) || []).length >
                 ACCEPTABLE.reduce((total, regex) => (total + message.text.match(regex) || []).length, 0)) {
                 api.sendMessage({
                     chat_id: message.chat.id,
