@@ -16,7 +16,7 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           name: robinj1995/nocto-plugin-richard-stallman/richard-stallman
-          registry: docker.pkg.github.com
+          registry: ghcr.io
           username: RobinJ1995
           password: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           snapshot: true
